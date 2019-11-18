@@ -33,6 +33,7 @@
 - print("==================================================================")
 
 # Hasilnya
+![SharedScreenshot](https://user-images.githubusercontent.com/56239989/69056540-c952fd80-0a42-11ea-949a-4cdd02c0f2ed.jpg)
 
 # Flow Chartnya
 ![SharedScreenshot](https://user-images.githubusercontent.com/56239989/69056270-28fcd900-0a42-11ea-89c8-fdcb089a38ef.jpg)

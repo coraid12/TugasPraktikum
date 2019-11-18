@@ -1,45 +1,26 @@
-# Memasukkan data
-n = 0
-nama = []
-nim = []
-tugas = []
-uts = []
-uas = []
-akhir = []
-jawab = input("Masukan Data (y/t)?")
-mhsw = []
+daftar_nilai = []
 
+ulangi = True
 
-# Looping
-while jawab == 'y':
-    s_nama = input("Nama :")
-    nama.append(s_nama)
-    i_nim = int(input("NIM :"))
-    nim.append(i_nim)
-    i_tugas = int(input("Nilai Tugas :"))
-    tugas.append(i_tugas)
-    i_uts = int(input("Nilai UTS :"))
-    uts.append(i_uts)
-    i_uas = int(input("Nilai UAS :"))
-    uas.append(i_uas)
-    i_akhir = (i_tugas * 30/100) + (i_uts * 35/100) + (i_uas * 35/100)
-    akhir.append(i_akhir)
-    jawab = input("Tambah data (y/t)?")
-    if jawab == 't':
-        break
-    n += 0
-    mhsw.append(nama)
-    mhsw.append(nim)
-    mhsw.append(tugas)
-    mhsw.append(uts)
-    mhsw.append(uas)
-    mhsw.append(akhir)
+while ulangi:
+    nama = input("Masukan nama: ")
+    nim = input("Masukan NIM: ")
+    tugas = int(input("Masukan nilai Tugas: "))
+    uts = int(input("Masukan nilai UTS: "))
+    uas = int(input("Masukan nilai UAS: "))
+    akhir = (tugas*30/100)+(uts*35/100)+(uas*35/100)
 
+    daftar_nilai.append([nama, int(nim), int(tugas), int(uts), int(uas), int(akhir)],)
+    if (input("tambah data lagi (y/t)?") == 't'):
+        ulangi = False
 
-# Cetak hasil
-print("===============================================================================")
-print("No.  |       Nama       |   NIM   |   Tugas   |   UTS   |   UAS   |   Akhir   |")
-print("===============================================================================")
-for n in range(0, len(mhsw[n])):
-    print('|',n+1,'|       ',nama[n],'      |  ',nim[n],'  |  ',tugas[n],'  |  ',uts[n],'  |  ',uas[n],'  |  ',akhir[n],'  |')
-print("===============================================================================")
+print("\nDaftar Nilai Mahasiswa:")
+print("===================================================================")
+print("| No |      Nama      |    Nim    | Tugas |  UTS  |  UAS  | Akhir |")
+print("===================================================================")
+i=0
+for item in daftar_nilai:
+    i+=1
+    print("| {no:2d} | {nama:14s} | {nim:9d} | {tugas:5.2f} | {uts:5.2f} | {uas:5.2f} | {akhir:5.2f} |"
+            .format(no=i, nama=item[0], nim=item[1], tugas=item[2], uts=item[3], uas=item[4], akhir=item[5]))
+print("==================================================================")

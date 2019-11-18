@@ -20,7 +20,7 @@
 
 
 
-# Cetak hasil                                                                   #segala macam output
+3. Cetak hasil                                                                   #segala macam output
 - print("\nDaftar Nilai Mahasiswa:")
 - print("===================================================================")
 - print("| No |      Nama      |    Nim    | Tugas |  UTS  |  UAS  | Akhir |")

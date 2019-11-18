@@ -3,13 +3,13 @@
 1. Memasukkan data
 - n = 0                                                                           # Integer
 - nama = []                                                                       # Data yang ingin dimasukan
-nim = []                                                                        # Data yang ingin dimasukan
-tugas = []                                                                      # Data yang ingin dimasukan
-uts = []                                                                        # Data yang ingin dimasukan
-uas = []                                                                        # Data yang ingin dimasukan
-akhir = []                                                                      # Data yang ingin dimasukan
-jawab = input("Masukan Data (y/t)?")                                            # Disini menentukan decision
-mhsw = []                                                                       # Ini digunakan agar datanya rapih berurutan kebawah
+- nim = []                                                                        # Data yang ingin dimasukan
+- tugas = []                                                                      # Data yang ingin dimasukan
+- uts = []                                                                        # Data yang ingin dimasukan
+- uas = []                                                                        # Data yang ingin dimasukan
+- akhir = []                                                                      # Data yang ingin dimasukan
+- jawab = input("Masukan Data (y/t)?")                                            # Disini menentukan decision
+- mhsw = []                                                                       # Ini digunakan agar datanya rapih berurutan kebawah
 
 
 # Looping

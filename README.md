@@ -1,26 +1,24 @@
-# TugasPraktikum
+# Tugas Praktikum
+# Looping Jika jawab 'y' (ya)
+daftar_nilai = [] #berfungsi sebagai integer list
 
-1. Memasukkan data
-- daftar_nilai = []
+ulangi = True #keadaan looping saat kondisi true
 
-- ulangi = True
+while ulangi : #masukan while do kemudian masukan data yang dibutuhkan seperti contoh berikut
 
-- while ulangi:
-    - nama = input("Masukan nama: ")
+# Masukan Data
+- nama = input("Masukan nama: ")
     - nim = input("Masukan NIM: ")
     - tugas = int(input("Masukan nilai Tugas: "))
     - uts = int(input("Masukan nilai UTS: "))
     - uas = int(input("Masukan nilai UAS: "))
     - akhir = (tugas*30/100)+(uts*35/100)+(uas*35/100)
-
-2. Looping
-- daftar_nilai.append([nama, int(nim), int(tugas), int(uts), int(uas), int(akhir)],)
+    
+    - daftar_nilai.append([nama, int(nim), int(tugas), int(uts), int(uas), int(akhir)],)
     - if (input("tambah data lagi (y/t)?") == 't'):
         - ulangi = False
 
-
-
-3. Cetak hasil                                                                   #segala macam output
+# Cetak hasil Jika jawaban 't' (tidak)                                                                
 - print("\nDaftar Nilai Mahasiswa:")
 - print("===================================================================")
 - print("| No |      Nama      |    Nim    | Tugas |  UTS  |  UAS  | Akhir |")
